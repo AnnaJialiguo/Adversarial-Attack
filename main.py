@@ -33,3 +33,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# FGSM result
+adv_dataset1 = fgsm_attack(model, dataset, epsilon=0.02, device=device)
+evaluate_model(model, adv_dataset1, device)
+
+# PGD result
+adv_dataset2 = pgd_attack(model, dataset, epsilon=0.02, alpha=0.005, steps=10, device=device)
+evaluate_model(model, adv_dataset2, device)
+
+# Patch result
+adv_dataset3 = patch_attack(model, dataset, patch_size=32, epsilon=0.3, device=device)
+evaluate_model(model, adv_dataset3, device)
+
