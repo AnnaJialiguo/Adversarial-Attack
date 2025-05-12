@@ -31,21 +31,6 @@ We also evaluate **transferability** of these attacks to a separate model, **Den
 | DenseNet-121   | PGD            | 39.0%     | 63.6%     |
 | DenseNet-121   | Patch          | 72.6%     | 92.4%     |
 
-## 🚀 Usage
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/jailbreaking-deep-models.git
-   cd jailbreaking-deep-models
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run the notebook or convert code into modular scripts.
-
 ## 📚 Acknowledgements
 
 - Based on NYU Deep Learning (Spring 2025) Project 3.
