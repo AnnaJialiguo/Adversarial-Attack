@@ -33,9 +33,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-<<<<<<< HEAD
 
-=======
 >>>>>>> a98f8ad (Upload2 project files for adversarial attack)
 # FGSM result
 adv_dataset1 = fgsm_attack(model, dataset, epsilon=0.02, device=device)
@@ -48,7 +46,3 @@ evaluate_model(model, adv_dataset2, device)
 # Patch result
 adv_dataset3 = patch_attack(model, dataset, patch_size=32, epsilon=0.3, device=device)
 evaluate_model(model, adv_dataset3, device)
-<<<<<<< HEAD
-
-=======
->>>>>>> a98f8ad (Upload2 project files for adversarial attack)
